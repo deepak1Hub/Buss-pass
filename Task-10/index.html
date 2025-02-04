@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus pass Project</title>
+</head>
+
+<body>
+    <center>
+        <h1>TELANGANA STATE BOARD TRANSPORT CORPORATION</h1>
+    </center>
+    <center>
+        <h1>GENERAL BUS PASS APPLICATION</h1>
+    </center>
+
+
+    <form method="get">
+        <fieldset>
+            <legend>Applicant Details</legend>
+            <br />
+            <table width="100%">
+                <tr>
+                    <td width="50%"><label>Name : </label>
+                        <input type="text" name="name" required />
+                    </td>
+                    <td>
+                        <label>Father Name :</label>
+                        <input type="text" name="Father's Name" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <br>
+                        <label for="">DOB : </label>
+                        <input type="datetime-local" name="DOB" required>
+                    </td>
+                    <td>
+                        <br>
+                        <label for="">Gender :</label>
+                        <input type="radio" name="Gender" id="Gender" required>
+                        <label for="Gender">Male</label>
+                        <input type="radio" name="Gender" id="Gender1" required>
+                        <label for="Gender1">Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="50%">
+                        <br>
+                        <label for="">Watsapp NO : </label>
+                        <input type="text" name="Watsapp number" required>
+                    </td>
+                    <td>
+                        <br>
+                        <label for="">E-mail :</label>
+                        <input type="email" name="emial" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <input type="file">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <br>
+    <br>
+
+    <form method="get">
+        <fieldset>
+            <legend>Residental Address Details</legend>
+            <br>
+            <table width="100%">
+                <tr>
+                    <td width="50%">
+                        <label for="expandable-textarea">Applicant Details :</label>
+                        <textarea id="expandable-textarea" name="expandable-textarea" rows="5" cols="40"
+                            placeholder="You can resize this box."></textarea>
+
+                    </td>
+                    <td>
+                        <label for="District">District :</label>
+                        <select name="District" id="District">
+                            <option value="Rajhamundry">---Select---</option>
+                            <option value="Guntur">Guntur</option>
+                            <option value="Vijaywada">Vijaywada</option>
+                            <option value="Bapatla">Bapatlaa</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <br>
+                        <label for="Mandal">Mandal :</label>
+                        <select name="Mandal" id="Mandal">
+                            <option value="Rajhamundry">---Select---</option>
+                            <option value="Guntur">Guntur</option>
+                            <option value="Vijaywada">Vijaywada</option>
+                            <option value="Bapatla">Bapatlaa</option>
+                            <option value="Rajhamundry">Rajhamundry</option>
+                        </select>
+                    </td>
+                    <td>
+                        <br>
+                        <label for="Village">Village :</label>
+                        <select name="Village" id="Village">
+                            <option value="Rajhamundry">---Select---</option>
+                            <option value="Guntur">Guntur</option>
+                            <option value="Vijaywada">Vijaywada</option>
+                            <option value="Bapatla">Bapatlaa</option>
+                            <option value="Rajhamundry">Rajhamundry</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <label for="">Pincode :</label>
+                        <input type="text" name="pincode" required>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <form method="get">
+        <fieldset>
+            <br>
+            <legend>Pass Type Details</legend>
+            <label for="">City :</label>
+            <select name="city" id="city">
+                <option value="Rajhamundry">---Select---</option>
+                <option value="Guntur">Guntur</option>
+                <option value="Vijaywada">Vijaywada</option>
+                <option value="Bapatla">Bapatlaa</option>
+                <option value="Rajhamundry">Rajhamundry</option>
+            </select>
+            <br>
+            <br>
+            <label for="passtype">Pass Type :</label>
+            <select name="pastype" id="passtype">
+                <option value="Rajhamundry">---Select---</option>
+                <option value="student">Student</option>
+                <option value="sir">Sir</option>
+                <option value="madam">Madam</option>
+                <option value="authority">Authority</option>
+            </select>
+            <br><br>
+    </form>
+    </fieldset>
+    </form>
+    <br>
+    <br>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Mode of Payment & Padd Collections</legend>
+            <br>
+            <label for="">Payment Method :</label>
+            <select name="Payment" id="payment">
+                <option value="Phonepay">---Select---</option>
+                <option value="Phonepay">Phonepay</option>
+                <option value="Paytm">Paytm</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Debit Card">Debit Card</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Pass Delivery Mode :</label>
+            <select name="Payment" id="payment">
+                <option value="Phonepay">---Select---</option>
+                <option value="Phonepay">Pyhsical</option>
+                <option value="Paytm">Recommend</option>
+            </select>
+            <br>
+            <br>
+            <label for="">Center At Which You Collect Pass :</label>
+            <select name="Payment" id="payment">
+                <option value="Phonepay">---Select---</option>
+                <option value="Phonepay">Arch Center</option>
+                <option value="Paytm">Donka Road</option>
+                <option value="Paytm">BrodiPet</option>
+            </select>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <center>
+        <img src="./PHOTO-2025-02-04-16-36-56.jpg" width="200" alt="">
+        
+        <br>
+        <input type="text" placeholder="Enter Captcha" pattern="XBVwRw">
+        <br>
+        <br>
+        <input type="submit" name="submit" id="">
+    </center>
+</body>
+
+</html>
